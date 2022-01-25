@@ -1,13 +1,11 @@
 import { Header } from "../shared/Header/Header"
 
-export const Home = () => {
-
-
+export const Games = () => {
 
     return (
         <>
             <Header />
-            <p>Home!</p>
+            <p>Página de games</p>
         </>
     )
 }
