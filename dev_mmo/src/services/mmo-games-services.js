@@ -39,19 +39,16 @@ const defaultGet = (options) => {
 }
 
 const GetLatestNews = async () => {
-    
-    var resultado = await defaultGet(LatestNewsOptions).then(dados => dados);
-    return await resultado;
+    return await defaultGet(LatestNewsOptions).then(dados => dados);
 }
 
-const GetGamesList = () => {
-    
-    return defaultGet(GamesListOptions).then(dados => dados)
+const GetGamesList = async () => {
+    return await defaultGet(GamesListOptions).then(dados => dados)
 }
 
-const GetGameDetails = (id) => {
-    var options = {...GameDetailsOptions, params: { id: id}}
-    return defaultGet(options).then(dados => dados)
+const GetGameDetails = async (id) => {
+    var options = { ...GameDetailsOptions, params: { id: id } }
+    return await defaultGet(options).then(dados => dados)
 }
 
 export const gamesApi = {
