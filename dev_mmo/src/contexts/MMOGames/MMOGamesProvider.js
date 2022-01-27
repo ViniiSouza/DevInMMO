@@ -23,6 +23,7 @@ export const MMOGamesProvider = ({ children }) => {
             var listaJogos = await api.GetGamesList();
             setGamesList(listaJogos);
             setJogosFiltrados(listaJogos);
+            console.log(listaJogos)
         })()
     }, []);
 
@@ -33,7 +34,7 @@ export const MMOGamesProvider = ({ children }) => {
 
 
     return (
-        <MMOGamesContext.Provider value={{ termoBusca, gamesList, setTermoBusca, noticiasFiltradas }}>
+        <MMOGamesContext.Provider value={{ termoBusca, setTermoBusca, noticiasFiltradas, jogosFiltrados }}>
             {children}
         </MMOGamesContext.Provider>
     );

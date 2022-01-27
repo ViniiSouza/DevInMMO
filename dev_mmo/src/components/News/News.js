@@ -3,14 +3,12 @@ import { NewsCard } from "../NewsCard/NewsCard";
 import { NewsContainer } from "./News.styles";
 
 export const News = () => {
-    const { newsList, noticiasFiltradas } = useMMOGames();
-    
-    console.log(newsList)
+    const { noticiasFiltradas } = useMMOGames();
 
     return (
         <NewsContainer>
             {noticiasFiltradas.map((news) => (
-                <NewsCard title={news.title} mainImg={news.thumbnail} description={news.short_description} articleUrl={news.article_url}></NewsCard>
+                <NewsCard key={news.id} title={news.title} mainImg={news.thumbnail} description={news.short_description} articleUrl={news.article_url}></NewsCard>
         ))}
 
         </NewsContainer>

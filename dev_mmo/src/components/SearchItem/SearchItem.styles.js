@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Search = styled.div`
     margin: 5vh 2vw;
-    
 
+    
 `
 
 export const SearchField = styled.input`

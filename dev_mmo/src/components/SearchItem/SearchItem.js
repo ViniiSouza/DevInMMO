@@ -4,7 +4,13 @@ import { Search, SearchField } from "./SearchItem.styles"
 export const SearchItem = ({ list, typeList }) => {
     const { termoBusca, setTermoBusca } = useMMOGames();
     const listLength = list.length;
-    var aboutSearch = termoBusca === '' ? (`${typeList === 'games' ? 'Todos os jogos' : 'Todas as notícias' } (${listLength})`) : (`${typeList === 'games' ? 'Jogos encontrados:' : 'Notícias encontradas:'} ${listLength}`);
+    var aboutSearch = termoBusca === ''
+        ? (`${typeList === 'games'
+            ? 'Todos os jogos'
+            : 'Todas as notícias'} (${listLength})`)
+        : (`${typeList === 'games'
+            ? 'Jogos encontrados:'
+            : 'Notícias encontradas:'} ${listLength}`);
 
     return (
         <Search>
