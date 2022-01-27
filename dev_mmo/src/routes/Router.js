@@ -1,14 +1,14 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { Games } from '../components/Games/Games';
+import { GamesPage } from '../components/GamesPage/GamesPage';
 import { Home } from "../components/Home/Home"
-import { News } from '../components/News/News';
+import { NewsPage } from '../components/NewsPage/NewsPage';
 
 export const Router = () => (
     <Routes>
         <Route path="/" element={<Navigate replace to='/home' />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/noticias" element={<News />} />
-        <Route path="/jogos" element={<Games />} />
+        <Route path="/noticias" element={<NewsPage />} />
+        <Route path="/jogos" element={<GamesPage />} />
         <Route path="*" element={<Navigate replace to='/home' />} />
     </Routes>
 )
