@@ -13,6 +13,7 @@ export const GamesPage = () => {
             <Paginacao typeList={'games'} />
 
             <Games />
+            <Paginacao typeList={'games'} />
         </>
 
     );

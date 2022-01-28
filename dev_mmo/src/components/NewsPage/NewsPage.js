@@ -15,6 +15,7 @@ export const NewsPage = () => {
             <SearchItem list={noticiasFiltradas} typeList={'news'} />
             <Paginacao typeList={'news'} />
             <News />
+            <Paginacao typeList={'news'} />
         </>
 
     );

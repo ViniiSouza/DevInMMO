@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PaginacaoContainer = styled.div`
     
-    margin: 3vw;
+    margin: 0 0 2vh 2vw;
 `
 
 export const ArrowButton = styled.button`
