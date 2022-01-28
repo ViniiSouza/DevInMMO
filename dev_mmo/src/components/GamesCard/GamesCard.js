@@ -1,4 +1,4 @@
-import { GamesCardContainer, GamesCardDescription, GamesCardImage, GamesCardTitle, HiddenTitle, ImageContainer } from "./GamesCard.styles"
+import { GamesCardContainer, GamesCardDescription, GamesCardImage, GamesCardTitle, } from "./GamesCard.styles"
 
 export const GamesCard = ({ title, mainImg, description }) => {
 

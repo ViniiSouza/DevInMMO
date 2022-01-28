@@ -1,4 +1,5 @@
 import { useMMOGames } from "../../contexts/MMOGames/useMMOGames";
+import { ArrowButton, PaginacaoContainer, SpanText } from "./Paginacao.styles";
 
 export const Paginacao = ({ typeList }) => {
     const { pagina, setPagina, games, news } = useMMOGames();
@@ -14,17 +15,17 @@ export const Paginacao = ({ typeList }) => {
     };
 
     return (
-        <div className={styles.pagination}>
-            <button className={styles.pageButton} onClick={handlePagAnterior}>
+        <PaginacaoContainer>
+            <ArrowButton className={styles.pageButton} onClick={handlePagAnterior}>
                 {`<`}
-            </button>
-            <span>
+            </ArrowButton>
+            <SpanText>
                 Página {pagina} de {qtdMaximaPaginas}
-            </span>
-            <button className={styles.pageButton} onClick={handleProxPagina}>
+            </SpanText>
+            <ArrowButton className={styles.pageButton} onClick={handleProxPagina}>
                 {`>`}
-            </button>
-        </div>
+            </ArrowButton>
+        </PaginacaoContainer>
     )
 
 }
