@@ -11,6 +11,12 @@ export const NavTitle = styled.h1`
     display:inline-block;
     font-size: 36px;
     margin: 20px 20px;
+    cursor: pointer;
+    transition: .2s;
+    &:hover {
+        color: grey;
+        transition: .3s;
+    }
 `
 
 export const NavMenu = styled.nav`
