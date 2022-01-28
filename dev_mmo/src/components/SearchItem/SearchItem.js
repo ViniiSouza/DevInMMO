@@ -2,8 +2,10 @@ import { useMMOGames } from "../../contexts/MMOGames/useMMOGames";
 import { Search, SearchField } from "./SearchItem.styles"
 
 export const SearchItem = ({ list, typeList }) => {
-    const { termoBusca, setTermoBusca } = useMMOGames();
-    const listLength = list.length;
+    const { termoBusca, setTermoBusca, games, news } = useMMOGames();
+
+    const listLength = termoBusca ? list.length :
+        (typeList === 'games' ? games.current.length : news.current.length);
     var aboutSearch = termoBusca === ''
         ? (`${typeList === 'games'
             ? 'Todos os jogos'

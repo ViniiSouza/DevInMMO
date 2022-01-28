@@ -10,7 +10,7 @@ export const GamesPage = () => {
             <Header />
             <SearchItem list={jogosFiltrados} typeList={'games'} />
 
-            <Games />
+            <Games typeList={'games'} />
         </>
 
     );

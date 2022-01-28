@@ -11,9 +11,9 @@ export const NewsPage = () => {
         <>
             <Header />
 
-            <SearchItem list={noticiasFiltradas} typeList={'news'}/>
+            <SearchItem list={noticiasFiltradas} typeList={'news'} />
 
-            <News />
+            <News typeList={'news'} />
         </>
 
     );
