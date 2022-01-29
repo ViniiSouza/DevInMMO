@@ -29,3 +29,19 @@ export const lightTheme = {
         fadedWarning: 'rgba(254, 147, 17, 40%)'
     }
 }
+
+export const darkTheme = {
+    colors: {
+        primary: '#000721',
+        secondary: '#e0e0e0',
+        selection: '#00186b',
+        extra1: 'white',
+        extra2: 'black',
+        extra3: 'grey',
+        faded: 'rgba(0, 10, 43, 80%)',
+        moreFaded: 'rgba(0, 10, 43,10%)',
+        invisible: 'rgba(0,0,0, 0%)',
+        warning: 'orange',
+        fadedWarning: 'rgba(254, 147, 17, 40%)'
+    }
+}
