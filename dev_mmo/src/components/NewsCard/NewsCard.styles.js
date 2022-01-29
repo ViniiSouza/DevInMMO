@@ -6,10 +6,12 @@ export const NewsCardContainer = styled.section`
     margin: 10px;
     width: 45vw;
     text-align: left;
+    transition: 0.2s;
     
     &:hover {
         border: 2px solid ${(props) => props.theme.colors.selection};
         background-color: ${(props) => props.theme.colors.moreFaded};
+        transition: 0.3s;
     }
 `;
 

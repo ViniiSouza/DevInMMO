@@ -11,6 +11,8 @@ export const GamesCardContainer = styled.section`
         border-color: ${(props) => props.theme.colors.selection};
         transition: 0.5s;
         box-shadow: 7px 7px 15px 2px ${(props) => props.theme.colors.primary};
+        margin-top: -2px;
+        margin-bottom: 2px;
     }
 `;
 

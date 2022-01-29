@@ -5,7 +5,7 @@ export const GamesCard = ({ title, mainImg, description }) => {
     return (
         <GamesCardContainer>
 
-                <GamesCardImage src={mainImg} />
+            <GamesCardImage src={mainImg} />
             <GamesCardTitle>{title}</GamesCardTitle>
             <hr />
             <GamesCardDescription>{description}</GamesCardDescription>

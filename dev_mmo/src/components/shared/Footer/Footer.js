@@ -1,6 +1,5 @@
 import { FooterContainer, FooterIcon, FooterTitle } from "./Footer.styles"
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { Link } from "react-router-dom";
 
 export const Footer = () => {
 

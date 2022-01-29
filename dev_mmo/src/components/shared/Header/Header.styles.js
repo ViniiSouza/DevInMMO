@@ -13,11 +13,15 @@ export const NavTitle = styled.h1`
     margin: 20px 20px;
     cursor: pointer;
     transition: .2s;
-    color: ${(props) => props.theme.colors.mainText};
+    color: ${(props) => props.theme.colors.extra1};
     &:hover {
         color: ${(props) => props.theme.colors.extra3};
         transition: .3s;
     }
+`;
+
+export const ChangeTheme = styled.select`
+
 `;
 
 export const NavMenu = styled.nav`

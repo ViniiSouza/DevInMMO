@@ -5,7 +5,7 @@ export const FooterContainer = styled.div`
     height: 10vh;
     line-height: 5vh;
     background-color: ${(props) => props.theme.colors.primary};
-    color: ${(props) => props.theme.colors.mainText};
+    color: ${(props) => props.theme.colors.extra1};
 
 `;
 
