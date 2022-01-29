@@ -9,6 +9,11 @@ const ChangePosition = keyframes`
   }
 `;
 
+export const HomeContainer = styled.div`
+  background-color: ${(props) => props.theme.colors.background};
+  height: 100vh;
+`;
+
 export const BackgroundContainer = styled.div`
   margin: 10px auto;
   border: 5px solid ${(props) => props.theme.colors.primary};

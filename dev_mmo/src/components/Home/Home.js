@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import { Header } from "../shared/Header/Header"
-import { BackgroundContainer, BackgroundDescription, BackgroundSection, BackgroundTitle, HomeBackground } from "./Home.styles"
+import { BackgroundContainer, BackgroundDescription, BackgroundSection, BackgroundTitle, HomeBackground, HomeContainer } from "./Home.styles"
 
 export const Home = () => {
     var navigate = useNavigate();
     return (
-        <>
+        <HomeContainer>
             <Header />
-            <p style={{ textAlign: 'center' }}>Campo de notícias passando igual aos jogos</p>
+            <p style={{ textAlign: 'center', color: 'white' }}>Campo de notícias passando igual aos jogos</p>
             <BackgroundContainer>
                 <HomeBackground>
                     <BackgroundSection onClick={() => navigate('/jogos')}>
@@ -16,6 +16,6 @@ export const Home = () => {
                     </BackgroundSection>
                 </HomeBackground>
             </BackgroundContainer>
-        </>
+        </HomeContainer>
     )
 }

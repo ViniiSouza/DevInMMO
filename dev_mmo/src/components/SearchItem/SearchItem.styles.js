@@ -7,7 +7,7 @@ export const Search = styled.div`
 export const SearchField = styled.input`
     width: 40vw;
     height: 4vh;
-    border: 2px solid ${(props) => props.theme.colors.primary};
+    border: 2px solid ${(props) => props.theme.colors.borderColor};
     border-radius: 5px;
     font-family: Montserrat;
     font-size: 16px;
@@ -15,4 +15,5 @@ export const SearchField = styled.input`
 
 export const ItemsAmount = styled.p`
     margin: 20px 10px;
+    color: ${(props) => props.theme.colors.mainText}
 `;

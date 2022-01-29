@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NewsCardContainer = styled.div`
-    border: 2px solid ${(props) => props.theme.colors.primary};
+    border: 2px solid ${(props) => props.theme.colors.borderColor};
     border-radius: 5px;
     margin: 10px;
     width: 45vw;

@@ -13,6 +13,7 @@ export const NavTitle = styled.h1`
     margin: 20px 20px;
     cursor: pointer;
     transition: .2s;
+    color: ${(props) => props.theme.colors.mainText};
     &:hover {
         color: ${(props) => props.theme.colors.extra3};
         transition: .3s;
@@ -34,7 +35,6 @@ export const NavButton = styled.h3`
     transition: 0.3s;
     text-decoration: underline 0.2em ${(props) => props.theme.colors.invisible};
     text-underline-offset: 0.2em;
-
     &:hover {
         text-decoration-color: ${(props) => props.theme.colors.extra1};
         transition: 0.3s;

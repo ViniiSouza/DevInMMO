@@ -17,7 +17,7 @@ export const MMOGamesProvider = ({ children }) => {
         (async () => {
             var listaNoticias = await api.GetLatestNews();
             setNewsList(listaNoticias);
-            setNoticiasFiltradas(listaNoticias)
+            setNoticiasFiltradas(listaNoticias);
             news.current = listaNoticias;
             setNoticiasFiltradas(filtrarListaPorPagina(news.current, pagina));
         })()

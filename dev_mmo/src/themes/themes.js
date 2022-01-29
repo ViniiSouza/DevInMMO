@@ -1,7 +1,7 @@
 export const defaultTheme = {
     colors: {
         primary: '#081C64',
-        secondary: '#e0e0e0',
+        background: '#e0e0e0',
         selection: '#0933bf',
         extra1: 'white',
         extra2: 'black',
@@ -10,14 +10,16 @@ export const defaultTheme = {
         moreFaded: 'rgba(0,47,201, 10%)',
         invisible: 'rgba(0,0,0, 0%)',
         warning: 'orange',
-        fadedWarning: 'rgba(254, 147, 17, 40%)'
+        fadedWarning: 'rgba(254, 147, 17, 40%)',
+        mainText: 'black',
+        borderColor: '#081C64',
     }
 }
 
 export const lightTheme = {
     colors: {
         primary: '#0085f2',
-        secondary: '#e0e0e0',
+        background: '#e0e0e0',
         selection: '#5eb6ff',
         extra1: 'white',
         extra2: 'black',
@@ -26,22 +28,26 @@ export const lightTheme = {
         moreFaded: 'rgba(0, 203, 255, 10%)',
         invisible: 'rgba(0,0,0, 0%)',
         warning: 'orange',
-        fadedWarning: 'rgba(254, 147, 17, 40%)'
+        fadedWarning: 'rgba(254, 147, 17, 40%)',
+        mainText: 'black',
+        borderColor: '#0085f2',
     }
 }
 
 export const darkTheme = {
     colors: {
         primary: '#000721',
-        secondary: '#e0e0e0',
-        selection: '#00186b',
-        extra1: 'white',
+        background: '#0f193a',
+        selection: '#c4c4c4',
+        extra1: '#000721',
         extra2: 'black',
         extra3: 'grey',
         faded: 'rgba(0, 10, 43, 80%)',
         moreFaded: 'rgba(0, 10, 43,10%)',
         invisible: 'rgba(0,0,0, 0%)',
         warning: 'orange',
-        fadedWarning: 'rgba(254, 147, 17, 40%)'
+        fadedWarning: 'rgba(254, 147, 17, 40%)',
+        mainText: 'white',
+        borderColor: 'white',
     }
 }

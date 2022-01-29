@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const GamesContainer = styled.div`
     display:flex;
     background-color: ${(props) => props.theme.colors.background};
-    color: ${(props) => props.theme.colors.extra2};
+    color: ${(props) => props.theme.colors.mainText};
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 2vw;
