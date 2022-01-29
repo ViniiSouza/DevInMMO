@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const NewsCardContainer = styled.div`
+export const NewsCardContainer = styled.section`
     border: 2px solid ${(props) => props.theme.colors.borderColor};
     border-radius: 5px;
     margin: 10px;

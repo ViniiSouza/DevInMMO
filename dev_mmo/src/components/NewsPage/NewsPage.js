@@ -5,6 +5,7 @@ import { useMMOGames } from "../../contexts/MMOGames/useMMOGames";
 import { Paginacao } from "../Paginacao/Paginacao";
 import { useEffect } from "react";
 import { NewsPageContainer } from "./NewsPage.styles";
+import { Footer } from "../shared/Footer/Footer";
 
 export const NewsPage = () => {
     const { noticiasFiltradas, setTermoBusca } = useMMOGames();
@@ -21,6 +22,7 @@ export const NewsPage = () => {
             {noticiasFiltradas.length > 10 &&
                 <Paginacao typeList={'news'} />
             }
+            <Footer />
         </NewsPageContainer>
     );
 };

@@ -3,6 +3,7 @@ import { useMMOGames } from "../../contexts/MMOGames/useMMOGames";
 import { Games } from "../Games/Games";
 import { Paginacao } from "../Paginacao/Paginacao";
 import { SearchItem } from "../SearchItem/SearchItem";
+import { Footer } from "../shared/Footer/Footer";
 import { Header } from "../shared/Header/Header";
 import { GamesPageContainer } from "./GamesPage.styles";
 
@@ -22,6 +23,7 @@ export const GamesPage = () => {
             {jogosFiltrados.length > 10 &&
                 <Paginacao typeList={'games'} />
             }
+            <Footer />
         </GamesPageContainer>
 
     );

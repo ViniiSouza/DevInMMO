@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Footer } from "../shared/Footer/Footer";
 import { Header } from "../shared/Header/Header"
 import { BackgroundContainer, BackgroundDescription, BackgroundSection, BackgroundTitle, HomeBackground, HomeContainer } from "./Home.styles"
 
@@ -16,6 +17,7 @@ export const Home = () => {
                     </BackgroundSection>
                 </HomeBackground>
             </BackgroundContainer>
+            <Footer />
         </HomeContainer>
     )
 }

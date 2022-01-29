@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const GamesCardContainer = styled.div`
+export const GamesCardContainer = styled.section`
     border: 5px solid ${(props) => props.theme.colors.primary};
     border-radius: 5px;
     margin: 10px;
