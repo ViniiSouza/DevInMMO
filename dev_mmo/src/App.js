@@ -3,19 +3,26 @@ import { ThemeProvider } from 'styled-components';
 import { MMOGamesProvider } from "./contexts/MMOGames/MMOGamesProvider";
 import { Router } from "./routes/Router";
 import { GlobaStyle } from "./themes/GlobalStyles";
-import { darkTheme, defaultTheme, lightTheme } from "./themes/themes";
+import { MyThemesProvider } from "./contexts/MyThemes/MyThemesProvider";
+import { MyThemesContext } from "./contexts/MyThemes/MyThemesContext";
 
 function App() {
   return (
     <>
-      <ThemeProvider theme={darkTheme}>
+      <MyThemesProvider>
         <GlobaStyle />
-        <BrowserRouter>
-          <MMOGamesProvider>
-            <Router />
-          </MMOGamesProvider>
-        </BrowserRouter>
-      </ThemeProvider>
+        <MMOGamesProvider>
+          <MyThemesContext.Consumer>
+            {(prop) => (
+              <ThemeProvider theme={prop.temaAtual}>
+                <BrowserRouter>
+                  <Router />
+                </BrowserRouter>
+              </ThemeProvider>
+            )}
+          </MyThemesContext.Consumer>
+        </MMOGamesProvider>
+      </MyThemesProvider>
     </>
   );
 }
