@@ -17,7 +17,7 @@ export const GamesCardContainer = styled.div`
 export const GamesCardImage = styled.img`
     border-bottom: 2px solid #081C64;
     overflow:hidden;
-    width: 15vw;
+    width: 100%;
 `;
 
 export const GamesCardTitle = styled.h6`

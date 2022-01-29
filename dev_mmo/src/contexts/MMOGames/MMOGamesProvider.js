@@ -43,6 +43,7 @@ export const MMOGamesProvider = ({ children }) => {
 
     useEffect(() => {
         setJogosFiltrados(filtrarListaPorPagina(games.current, pagina));
+        setNoticiasFiltradas(filtrarListaPorTermoDeBusca(news.current, termoBusca));
     }, [pagina]);
 
 

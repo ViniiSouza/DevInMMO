@@ -13,7 +13,9 @@ export const GamesPage = () => {
             <Paginacao typeList={'games'} />
 
             <Games />
-            <Paginacao typeList={'games'} />
+            {jogosFiltrados.length > 10 &&
+                <Paginacao typeList={'games'} />
+            }
         </>
 
     );

@@ -1,5 +1,5 @@
 import { useMMOGames } from "../../contexts/MMOGames/useMMOGames";
-import { Search, SearchField } from "./SearchItem.styles"
+import { ItemsAmount, Search, SearchField } from "./SearchItem.styles"
 
 export const SearchItem = ({ list, typeList }) => {
     const { termoBusca, setTermoBusca, games, news } = useMMOGames();
@@ -17,7 +17,7 @@ export const SearchItem = ({ list, typeList }) => {
     return (
         <Search>
             <SearchField onChange={(e) => setTermoBusca(e.target.value)} type="text" placeholder="Buscar..."></SearchField>
-            <p>{aboutSearch}</p>
+            <ItemsAmount>{aboutSearch}</ItemsAmount>
             <hr />
         </Search>
     )

@@ -15,7 +15,9 @@ export const NewsPage = () => {
             <SearchItem list={noticiasFiltradas} typeList={'news'} />
             <Paginacao typeList={'news'} />
             <News />
-            <Paginacao typeList={'news'} />
+            {noticiasFiltradas.length > 10 &&
+                <Paginacao typeList={'news'} />
+            }
         </>
 
     );
