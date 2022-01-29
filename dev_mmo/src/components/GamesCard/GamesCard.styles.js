@@ -1,22 +1,21 @@
 import styled from "styled-components";
 
 export const GamesCardContainer = styled.div`
-    border: 2px solid #081C64;
+    border: 2px solid ${(props) => props.theme.colors.primary};
     border-radius: 5px;
     margin: 10px;
-    width: 15vw;
+    width: 17.5vw;
     transition: 0.5s;
     
     &:hover {
-        border: 2px solid #0933bf;
+        border-color: ${(props) => props.theme.colors.selection};
         transition: 0.5s;
-        box-shadow: 5px 5px 8px 2px rgba(0, 12, 107, 20%);
+        box-shadow: 7px 7px 15px 2px ${(props) => props.theme.colors.primary};
     }
 `;
 
 export const GamesCardImage = styled.img`
-    border-bottom: 2px solid #081C64;
-    overflow:hidden;
+    border-bottom: 2px solid ${(props) => props.theme.colors.primary};
     width: 100%;
 `;
 
@@ -28,12 +27,9 @@ export const GamesCardTitle = styled.h6`
 
 export const GamesCardDescription = styled.p`
     font-size: 14px;
-    margin: 5px;
-    margin-bottom: 20px;
-    max-width: 100%;
+    margin: 5px 5px 20px 5px;    
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical; 
-    text-overflow: ellipsis;
 `;

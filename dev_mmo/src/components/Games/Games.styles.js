@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const GamesContainer = styled.div`
     display:flex;
-    background-color: white;
+    background-color: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.extra2};
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 2vw;
     margin-right: 2vw;
-`
+`;
