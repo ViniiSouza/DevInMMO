@@ -8,6 +8,7 @@ export const ArrowButton = styled.button`
     background-color: ${(props) => props.theme.colors.extra1};
     border: 2px solid ${(props) => props.theme.colors.borderColor};
     color: ${(props) => props.theme.colors.faded};
+    line-height: 20px;
     border-radius: 5px;
     font-size: 26px;
     margin: 5px;

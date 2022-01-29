@@ -1,5 +1,6 @@
 import { useMMOGames } from "../../contexts/MMOGames/useMMOGames";
 import { ArrowButton, PaginacaoContainer, SpanText } from "./Paginacao.styles";
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 export const Paginacao = ({ typeList }) => {
     const { pagina, setPagina, games, jogosFiltrados, news, noticiasFiltradas, termoBusca } = useMMOGames();
@@ -19,13 +20,13 @@ export const Paginacao = ({ typeList }) => {
     return (
         <PaginacaoContainer>
             <ArrowButton onClick={handlePagAnterior}>
-                {`<`}
+                <FaArrowLeft></FaArrowLeft>
             </ArrowButton>
             <SpanText>
                 Página {pagina} de {qtdMaximaPaginas}
             </SpanText>
             <ArrowButton onClick={handleProxPagina}>
-                {`>`}
+                <FaArrowRight></FaArrowRight>
             </ArrowButton>
         </PaginacaoContainer>
     )
