@@ -19,7 +19,7 @@ export const defaultTheme = {
 export const lightTheme = {
     colors: {
         primary: '#0085f2',
-        background: '#e0e0e0',
+        background: 'white',
         selection: '#5eb6ff',
         extra1: 'white',
         extra2: 'black',
@@ -39,7 +39,7 @@ export const darkTheme = {
         primary: '#000721',
         background: '#0f193a',
         selection: '#c4c4c4',
-        extra1: '#000721',
+        extra1: 'white',
         extra2: 'black',
         extra3: 'grey',
         faded: 'rgba(0, 10, 43, 80%)',

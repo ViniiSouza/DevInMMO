@@ -1,3 +1,3 @@
 import { createContext } from "react";
 
-export const ManageThemes = createContext();
+export const ManageThemesContext = createContext();

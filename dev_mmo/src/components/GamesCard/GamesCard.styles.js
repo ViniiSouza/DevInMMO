@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const GamesCardContainer = styled.div`
-    border: 2px solid ${(props) => props.theme.colors.primary};
+    border: 5px solid ${(props) => props.theme.colors.primary};
     border-radius: 5px;
     margin: 10px;
     width: 17.5vw;

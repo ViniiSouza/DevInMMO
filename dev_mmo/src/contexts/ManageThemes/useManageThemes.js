@@ -1,4 +1,4 @@
 import { useContext } from "react";
-import { ManageThemesContext } from "./MMOGamesContext";
+import { ManageThemesContext } from "./ManageThemesContext";
 
 export const useManageThemes = () => useContext(ManageThemesContext);
