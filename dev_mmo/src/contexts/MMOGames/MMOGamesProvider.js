@@ -19,7 +19,7 @@ export const MMOGamesProvider = ({ children }) => {
             setNewsList(listaNoticias);
             setNoticiasFiltradas(listaNoticias)
             news.current = listaNoticias;
-            setNoticiasFiltradas(filtrarListaPorTermoDeBusca(news.current, termoBusca));
+            setNoticiasFiltradas(filtrarListaPorPagina(news.current, pagina));
         })()
     }, []);
 
@@ -29,7 +29,6 @@ export const MMOGamesProvider = ({ children }) => {
             setGamesList(listaJogos);
             setJogosFiltrados(listaJogos);
             games.current = listaJogos;
-            console.log(listaJogos)
             setJogosFiltrados(filtrarListaPorPagina(games.current, pagina));
         })()
     }, []);
@@ -38,12 +37,11 @@ export const MMOGamesProvider = ({ children }) => {
         setNoticiasFiltradas(filtrarListaPorTermoDeBusca(newsList, termoBusca));
         setJogosFiltrados(filtrarListaPorTermoDeBusca(gamesList, termoBusca));
         setPagina(1);
-
     }, [termoBusca])
 
     useEffect(() => {
         setJogosFiltrados(filtrarListaPorPagina(games.current, pagina));
-        setNoticiasFiltradas(filtrarListaPorTermoDeBusca(news.current, termoBusca));
+        setNoticiasFiltradas(filtrarListaPorPagina(news.current, pagina));
     }, [pagina]);
 
 

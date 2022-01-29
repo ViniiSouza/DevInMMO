@@ -1,3 +1,4 @@
+import { useEffect } from "react/cjs/react.development";
 import { useMMOGames } from "../../contexts/MMOGames/useMMOGames";
 import { Games } from "../Games/Games";
 import { Paginacao } from "../Paginacao/Paginacao";
@@ -5,7 +6,11 @@ import { SearchItem } from "../SearchItem/SearchItem";
 import { Header } from "../shared/Header/Header";
 
 export const GamesPage = () => {
-    const { jogosFiltrados } = useMMOGames();
+    const { jogosFiltrados, setTermoBusca } = useMMOGames();
+    useEffect(() => {
+        setTermoBusca('')
+    }, []);
+    
     return (
         <>
             <Header />
