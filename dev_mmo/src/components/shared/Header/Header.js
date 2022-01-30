@@ -6,7 +6,7 @@ import { darkTheme, defaultTheme, lightTheme } from '../../../themes/themes';
 export const Header = () => {
     const linkStyles = { textDecoration: 'inherit', color: 'inherit' }
     var navigate = useNavigate();
-    const { setTemaAtual } = useMyThemes()
+    const { temaAtual, setTemaAtual } = useMyThemes()
 
     function UpdateTheme(tema) {
         if (tema === 'defaultTheme') setTemaAtual(defaultTheme);
@@ -19,7 +19,7 @@ export const Header = () => {
         <NavHeader>
             <NavTitle onClick={() => navigate('/home')}>MMO Games</NavTitle>
             <span>Tema: </span>
-            <ChangeTheme onChange={(e) => UpdateTheme(e.target.value)}>
+            <ChangeTheme value={temaAtual.name} onChange={(e) => UpdateTheme(e.target.value)}>
                 <option value={'defaultTheme'}>Default</option>
                 <option value={'lightTheme'}>Claro</option>
                 <option value={'darkTheme'}>Escuro</option>

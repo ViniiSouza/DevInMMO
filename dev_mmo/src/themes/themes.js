@@ -1,4 +1,5 @@
 export const defaultTheme = {
+    name: 'defaultTheme',
     colors: {
         primary: '#081C64',
         background: '#e0e0e0',
@@ -17,6 +18,7 @@ export const defaultTheme = {
 }
 
 export const lightTheme = {
+    name: 'lightTheme',
     colors: {
         primary: '#0085f2',
         background: 'white',
@@ -35,6 +37,7 @@ export const lightTheme = {
 }
 
 export const darkTheme = {
+    name: 'darkTheme',
     colors: {
         primary: '#000721',
         background: '#0f193a',
