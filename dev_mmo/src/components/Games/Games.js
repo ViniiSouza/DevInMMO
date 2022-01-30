@@ -8,7 +8,7 @@ export const Games = () => {
     return (
             <GamesContainer>
                 {jogosFiltrados.map((jogo) => (
-                    <GamesCard key={jogo.id} title={jogo.title} mainImg={jogo.thumbnail} description={jogo.short_description}></GamesCard>
+                    <GamesCard key={jogo.id} id={jogo.id} title={jogo.title} mainImg={jogo.thumbnail} description={jogo.short_description}></GamesCard>
                 ))}
 
             </GamesContainer>
