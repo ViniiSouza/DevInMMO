@@ -1,8 +1,9 @@
 import { ErrorMessage, Field, Form, Formik } from "formik"
-import { CommentButton, CommentsTitle, FormContainer, GameCommentsContainer } from "./GameComments.styles"
+import { BottomFormContainer, CommentButton, CommentContainer, CommentName, CommentsTitle, CommentText, ErrorMessageContainer, FormContainer, GameCommentsContainer, LikeSection, LikesNumber, TopFormContainer } from "./GameComments.styles"
 import * as Yup from 'yup';
 import styles from './GameComments.modules.css';
 import { useEffect, useState } from "react";
+import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 
 const KEY_LOCALSTORAGE = 'COMENTARIOS';
 
@@ -16,7 +17,8 @@ export const GameComments = ({ gameId }) => {
 
     const errorStyles = {
         color: 'red',
-        position: 'absolute'
+        position: 'absolute',
+        left: '28.5vw'
     };
 
     const handleSubmit = (values, { setSubmitting }) => {
@@ -59,7 +61,7 @@ export const GameComments = ({ gameId }) => {
     const schema = Yup.object().shape({
         nome: Yup.string().required('Campo obrigatório').min(4, 'Nome precisa ter mais de 3 caracteres'),
         email: Yup.string().required('Campo obrigatório').email('E-mail inválido'),
-        comentario: Yup.string().required('Campo obrigatóario').min(6, 'Comentário precisa ter mais de 5 caracteres').max(100, 'Comentário não pode ter mais de 100 caracteres')
+        comentario: Yup.string().required('Campo obrigatório').min(6, 'Comentário precisa ter mais de 5 caracteres').max(100, 'Comentário não pode ter mais de 100 caracteres')
     })
 
     return (
@@ -70,12 +72,20 @@ export const GameComments = ({ gameId }) => {
                 <Formik initialValues={initialValues} onSubmit={handleSubmit} validationSchema={schema}>
                     {({ isSubmitting, isValid }) => (
                         <Form>
-                            <Field className="name-field" name="nome" placeholder="Nome" />
-                            <Field className="email-field" name="email" placeholder="E-mail" />
-                            <ErrorMessage name="nome" style={{ ...errorStyles, left: '28.5vw' }} component="span" />
-                            <ErrorMessage name="email" style={{ ...errorStyles, left: '50.5vw' }} component="span" />
-                            <ErrorMessage name="comentario" style={{ ...errorStyles, position: 'relative', top: '20vh', left: '-17vw' }} component="span" />
-                            <Field as="textarea" className="coment-field" name="comentario" placeholder="Comentário" />
+                            <TopFormContainer>
+                                <Field className="name-field" name="nome" placeholder="Nome" />
+                                <Field className="email-field" name="email" placeholder="E-mail" />
+                                <ErrorMessageContainer>
+                                    <ErrorMessage name="nome" style={errorStyles} component="span" />
+                                    <ErrorMessage name="email" style={{ ...errorStyles, left: '50.5vw' }} component="span" />
+                                </ErrorMessageContainer>
+                            </TopFormContainer>
+                            <BottomFormContainer>
+                                <Field as="textarea" className="comment-field" name="comentario" placeholder="Comentário" />
+                                <ErrorMessageContainer>
+                                    <ErrorMessage name="comentario" style={errorStyles} component="span" />
+                                </ErrorMessageContainer>
+                            </BottomFormContainer>
                             <CommentButton onClick={() => console.log(comentarioJogo)} type="submit" disabled={isSubmitting || !isValid}>
                                 Enviar
                             </CommentButton>
@@ -84,7 +94,15 @@ export const GameComments = ({ gameId }) => {
                 </Formik>
             </FormContainer>
             {comentarioJogo?.comentarios?.map((item) => (
-                <p key={item.id}>{item.nome} {item.email} {item.comentario} {item.likes}</p>
+                <CommentContainer key={item.id}>
+                    <CommentName>{item.nome} ({item.email})</CommentName>
+                    <CommentText>{item.comentario}</CommentText>
+                    <LikeSection>
+                        <FaAngleDown style={{ cursor: 'pointer' }}></FaAngleDown>
+                        <LikesNumber>{item.likes}</LikesNumber>
+                        <FaAngleUp style={{ cursor: 'pointer' }}></FaAngleUp>
+                    </LikeSection>
+                </CommentContainer>
             ))}
         </GameCommentsContainer>
     )

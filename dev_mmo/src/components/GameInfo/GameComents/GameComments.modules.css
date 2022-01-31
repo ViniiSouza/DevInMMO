@@ -15,10 +15,10 @@
     line-height: 3vh;
 }
 
-.coment-field {
+.comment-field {
     border-radius: 5px;
     border: 1px solid grey;
-    margin: 25px 0;
+    margin: 25px 0 0 0;
     width: 42vw;
     height: 15vh;
     font-size: 16px;
