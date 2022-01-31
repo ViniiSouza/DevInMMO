@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { gamesApi as api } from "../../services/mmo-games-services";
+import { GameComments } from "./GameComents/GameComments";
 import { GameDetails } from "./GameDetails/GameDetails";
 import { GameContainer, GameSlideImage, GameThumbImage, GameTitle } from "./GameInfo.styles";
 import { GameRequirements } from "./GameRequirements/GameRequirements";
@@ -33,6 +34,7 @@ export const GameInfo = ({ gameId }) => {
             ))}
             <GameDetails data={gameData} />
             <GameRequirements requirements={gameData?.minimum_system_requirements}></GameRequirements>
+            <GameComments gameId={gameId} />
 
         </GameContainer>
     )
