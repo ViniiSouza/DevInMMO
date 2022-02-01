@@ -35,3 +35,15 @@ export const GamesCardDescription = styled.p`
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical; 
 `;
+
+export const GamesCardGenre = styled.p`
+    color: ${(props) => props.theme.colors.mainText};
+    position: relative;
+    border: 2px solid ${(props) => props.theme.colors.borderColor};
+    border-radius: 10px;
+    width: fit-content;
+    font-size: 12px;
+    padding: 4px;
+    margin: 5px;
+    text-transform: uppercase;
+`;
