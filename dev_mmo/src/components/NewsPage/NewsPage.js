@@ -8,9 +8,10 @@ import { NewsPageContainer } from "./NewsPage.styles";
 import { Footer } from "../shared/Footer/Footer";
 
 export const NewsPage = () => {
-    const { noticiasFiltradas, setTermoBusca } = useMMOGames();
+    const { noticiasFiltradas, setTermoBusca, setPagina } = useMMOGames();
     useEffect(() => {
         setTermoBusca('')
+        setPagina(1)
     }, []);
 
     return (

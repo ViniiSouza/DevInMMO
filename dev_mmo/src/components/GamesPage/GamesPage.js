@@ -8,9 +8,10 @@ import { Header } from "../shared/Header/Header";
 import { GamesPageContainer } from "./GamesPage.styles";
 
 export const GamesPage = () => {
-    const { jogosFiltrados, setTermoBusca } = useMMOGames();
+    const { jogosFiltrados, setTermoBusca, setPagina } = useMMOGames();
     useEffect(() => {
         setTermoBusca('')
+        setPagina(1)
     }, []);
 
     return (
