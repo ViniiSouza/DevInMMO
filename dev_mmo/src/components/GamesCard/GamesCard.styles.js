@@ -37,7 +37,7 @@ export const GamesCardDescription = styled.p`
 `;
 
 export const GamesCardGenre = styled.p`
-    color: ${(props) => props.theme.colors.mainText};
+    color: ${(props) => props.theme.colors.borderColor};
     position: relative;
     border: 2px solid ${(props) => props.theme.colors.borderColor};
     border-radius: 10px;
