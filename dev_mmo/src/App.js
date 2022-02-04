@@ -5,6 +5,8 @@ import { Router } from "./routes/Router";
 import { GlobaStyle } from "./themes/GlobalStyles";
 import { MyThemesProvider } from "./contexts/MyThemes/MyThemesProvider";
 import { MyThemesContext } from "./contexts/MyThemes/MyThemesContext";
+import { Header } from "./components/shared/Header/Header";
+import { Footer } from "./components/shared/Footer/Footer";
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
             {(prop) => (
               <ThemeProvider theme={prop.temaAtual}>
                 <BrowserRouter>
+                  <Header />
                   <Router />
                 </BrowserRouter>
+                <Footer />
               </ThemeProvider>
             )}
           </MyThemesContext.Consumer>

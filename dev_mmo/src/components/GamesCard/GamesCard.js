@@ -6,7 +6,6 @@ export const GamesCard = ({ id, title, mainImg, description, genre }) => {
 
     return (
         <GamesCardContainer onClick={() => navigate(`/game/${id}`)}>
-
             <GamesCardImage src={mainImg} />
             <GamesCardTitle>{title}</GamesCardTitle>
             <hr />
