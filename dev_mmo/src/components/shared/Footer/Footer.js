@@ -2,7 +2,6 @@ import { FooterContainer, FooterIcon, FooterTitle } from "./Footer.styles"
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const Footer = () => {
-
     return (
         <FooterContainer>
             <FooterTitle>Vinícius Gabriel de Souza - Copyright © 2022</FooterTitle>

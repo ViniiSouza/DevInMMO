@@ -16,13 +16,12 @@ export const Games = () => {
     return (
         <GamesContainer>
             {loading
-                ? 
+                ?
                 skeletonArray.map((item) => (<SkeletonElement key={item} border="5px" width="17.5vw" height="43vh" type="thumbnail" margin="10px" />))
                 :
                 jogosFiltrados.map((jogo) => (
-                <GamesCard key={jogo.id} id={jogo.id} title={jogo.title} mainImg={jogo.thumbnail} description={jogo.short_description} genre={jogo.genre}></GamesCard>
+                    <GamesCard key={jogo.id} id={jogo.id} title={jogo.title} mainImg={jogo.thumbnail} description={jogo.short_description} genre={jogo.genre}></GamesCard>
                 ))
-                
             }
         </GamesContainer>
     )

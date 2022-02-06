@@ -13,7 +13,6 @@ export const Home = () => {
 
     return (
         <HomeContainer>
-
             <BackgroundContainer>
                 {loading
                     ?

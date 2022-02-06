@@ -22,7 +22,6 @@ export const GameInfo = () => {
         (async () => {
             var resultado = await api.GetGameDetails(idGame)
             setGameData(resultado)
-            await console.log(resultado)
             setThumbImage(resultado.screenshots[0].image)
         })()
 
@@ -34,7 +33,6 @@ export const GameInfo = () => {
 
     return (
         <GameContainer>
-
             {loading
                 ?
                 <>
@@ -59,7 +57,6 @@ export const GameInfo = () => {
             <GameDetails data={gameData} />
             <GameRequirements requirements={gameData?.minimum_system_requirements}></GameRequirements>
             <GameComments gameId={idGame} />
-
         </GameContainer>
     )
 }

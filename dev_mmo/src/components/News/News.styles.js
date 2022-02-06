@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const NewsContainer = styled.div`
+export const NewsContainer = styled.section`
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;

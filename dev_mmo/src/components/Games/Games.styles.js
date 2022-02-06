@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const GamesContainer = styled.div`
+export const GamesContainer = styled.section`
     display:flex;
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.mainText};

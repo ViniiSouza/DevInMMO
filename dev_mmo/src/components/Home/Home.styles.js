@@ -9,18 +9,19 @@ const ChangePosition = keyframes`
   }
 `;
 
-export const HomeContainer = styled.div`
+export const HomeContainer = styled.main`
   background-color: ${(props) => props.theme.colors.background};
-  height: 100vh;
+  margin-top: -5px;
+  height: 80vh;
 `;
 
-export const BackgroundContainer = styled.div`
+export const BackgroundContainer = styled.section`
   margin: 10px auto;
   border: 5px solid ${(props) => props.theme.colors.primary};
   width: 90vw;
 `;
 
-export const HomeBackground = styled.div`
+export const HomeBackground = styled.section`
   height: 100%;
   animation: ${ChangePosition} 300s linear infinite;
   background: url("https://i.imgur.com/6AcIUOe.png");

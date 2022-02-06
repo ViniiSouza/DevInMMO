@@ -52,7 +52,6 @@ export const GameComments = ({ gameId }) => {
             const items = JSON.parse(comentariosStorage);
             const filter = items.find((item) => item.id === gameId);
             setComentarioJogo(filter);
-            console.log(comentarioJogo)
         }
     }, [gameId]);
 

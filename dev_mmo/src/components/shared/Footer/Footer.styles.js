@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterContainer = styled.div`
+export const FooterContainer = styled.footer`
     text-align: center;
     height: 10vh;
     line-height: 5vh;
@@ -18,4 +18,4 @@ export const FooterIcon = styled.a`
     font-size: 30px;
     margin: 3px;
     cursor: pointer;
-`
+`;

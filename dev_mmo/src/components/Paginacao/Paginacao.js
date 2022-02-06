@@ -30,5 +30,4 @@ export const Paginacao = ({ typeList }) => {
             </ArrowButton>
         </PaginacaoContainer>
     )
-
 }

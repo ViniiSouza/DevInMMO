@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const RequirementsContainer = styled.section`
     margin: auto 10vw;
     border: 2px solid ${(props) => props.theme.colors.borderColor};
-    padding-left: 2vw;
+    padding-left: 1vw;
     text-align: start;
 `;
 
@@ -23,5 +23,5 @@ export const PropertyTitle = styled.p`
 export const PropertyDescription = styled.span`
     font-weight: normal;
     position: absolute;
-    left: 450px;
+    left: 25vw;
 `;

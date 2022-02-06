@@ -1,8 +1,6 @@
 import { NewsCardButton, NewsCardContainer, NewsCardDescription, NewsCardImage, NewsCardTitle } from "./NewsCard.styles"
 
 export const NewsCard = ({ title, mainImg, description, articleUrl }) => {
-
-
     return (
         <NewsCardContainer>
             <NewsCardImage src={mainImg} />
@@ -18,5 +16,4 @@ NewsCard.defaultProps = {
     mainImg: 'https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/3957/image-not-found.jpg',
     description: 'Not found',
     articleUrl: 'https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/3957/image-not-found.jpg'
-
 }

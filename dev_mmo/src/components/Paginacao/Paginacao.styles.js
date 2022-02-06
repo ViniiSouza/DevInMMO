@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PaginacaoContainer = styled.div`
+export const PaginacaoContainer = styled.section`
     margin: 0 0 2vh 3vw;
 `;
 

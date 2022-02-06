@@ -14,7 +14,6 @@ export const Header = () => {
         else if (tema === 'lightTheme') setTemaAtual(lightTheme);
     }
 
-
     return (
         <NavHeader>
             <NavTitle onClick={() => navigate('/home')}>MMO Games</NavTitle>

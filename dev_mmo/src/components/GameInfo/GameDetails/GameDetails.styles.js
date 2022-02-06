@@ -14,7 +14,7 @@ export const DetailTitle = styled.p`
 export const DetailText = styled.span`
     font-weight: normal;
     position: absolute;
-    left: 18vw;
+    left: 23vw;
 `;
 
 export const DetailDescription = styled.p`

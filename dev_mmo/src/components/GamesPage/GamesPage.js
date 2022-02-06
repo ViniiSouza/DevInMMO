@@ -22,6 +22,5 @@ export const GamesPage = () => {
                 <Paginacao typeList={'games'} />
             }
         </GamesPageContainer>
-
     );
 };

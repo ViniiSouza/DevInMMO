@@ -10,7 +10,7 @@ export const CommentsTitle = styled.h6`
     margin-bottom: 10px;
     `;
 
-export const FormContainer = styled.div`
+export const FormContainer = styled.section`
     border: 2px solid ${(props) => props.theme.colors.borderColor};;
     border-radius: 10px;
     padding: 10px 0;
@@ -24,7 +24,7 @@ export const BottomFormContainer = styled.div`
     height: 22vh;
 `;
 
-export const ErrorMessageContainer = styled.div`
+export const ErrorMessageContainer = styled.section`
     display:block;
 `;
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Search = styled.div`
+export const Search = styled.section`
     margin: 5vh 3vw;  
 `;
 
