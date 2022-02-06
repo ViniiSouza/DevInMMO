@@ -5,6 +5,7 @@ export const NewsCardContainer = styled.section`
     border-radius: 5px;
     margin: 10px;
     width: 45vw;
+    height: 15.7vh;
     text-align: left;
     transition: 0.2s;
     

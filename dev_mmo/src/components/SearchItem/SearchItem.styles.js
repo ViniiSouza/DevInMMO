@@ -11,6 +11,7 @@ export const SearchField = styled.input`
     border-radius: 5px;
     font-family: Montserrat;
     font-size: 16px;
+    margin: 20px 0;
 `;
 
 export const ItemsAmount = styled.p`

@@ -1,23 +1,32 @@
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Footer } from "../shared/Footer/Footer";
-import { Header } from "../shared/Header/Header"
+import SkeletonElement from "../skeletons/SkeletonElement";
 import { BackgroundContainer, BackgroundDescription, BackgroundSection, BackgroundTitle, HomeBackground, HomeContainer } from "./Home.styles"
 
 export const Home = () => {
     var navigate = useNavigate();
+    const [loading, setLoading] = useState(true)
+
+    useEffect((
+        () => setTimeout(() => { setLoading(false) }, 1000))
+        , [])
+
     return (
         <HomeContainer>
-            <Header />
-            <p style={{ textAlign: 'center', color: 'white' }}>Campo de notícias passando igual aos jogos</p>
+
             <BackgroundContainer>
-                <HomeBackground>
-                    <BackgroundSection onClick={() => navigate('/jogos')}>
-                        <BackgroundTitle>Jogos atuais</BackgroundTitle>
-                        <BackgroundDescription>Confira plataformas e requisitos dos jogos em alta no momento</BackgroundDescription>
-                    </BackgroundSection>
-                </HomeBackground>
+                {loading
+                    ?
+                    <SkeletonElement margin="0" border="0" width="100%" height="70vh" />
+                    :
+                    <HomeBackground>
+                        <BackgroundSection onClick={() => navigate('/jogos')}>
+                            <BackgroundTitle>Jogos atuais</BackgroundTitle>
+                            <BackgroundDescription>Confira plataformas e requisitos dos jogos em alta no momento</BackgroundDescription>
+                        </BackgroundSection>
+                    </HomeBackground>
+                }
             </BackgroundContainer>
-            <Footer />
         </HomeContainer>
     )
 }

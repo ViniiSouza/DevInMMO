@@ -5,6 +5,7 @@ export const GamesCardContainer = styled.section`
     border-radius: 5px;
     margin: 10px;
     width: 17.5vw;
+    height: 43vh;
     transition: 0.5s;
     
     &:hover {

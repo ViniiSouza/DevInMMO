@@ -34,8 +34,13 @@ export const MMOGamesProvider = ({ children }) => {
     }, []);
 
     useEffect(() => {
-        setNoticiasFiltradas(filtrarListaPorTermoDeBusca(newsList, termoBusca));
-        setJogosFiltrados(filtrarListaPorTermoDeBusca(gamesList, termoBusca));
+        if(termoBusca === '') {
+            setJogosFiltrados(filtrarListaPorPagina(games.current, pagina));
+            setNoticiasFiltradas(filtrarListaPorPagina(news.current, pagina));
+        } else {
+            setNoticiasFiltradas(filtrarListaPorTermoDeBusca(newsList, termoBusca));
+            setJogosFiltrados(filtrarListaPorTermoDeBusca(gamesList, termoBusca));
+        }
         setPagina(1);
     }, [termoBusca])
 
