@@ -53,8 +53,11 @@ Para testar o aplicativo, basta cloná-lo, ir na pasta raíz do projeto e criar 
 Crie uma conta na RapidAPI, pegue a host e a key fornecidas na API MMO Games: https://rapidapi.com/digiwalls/api/mmo-games/
 Inclua o texto abaixo no arquivo .env, substituindo com a key:
 
+
 REACT_APP_RAPID_API_KEY=keyaqui
+
 REACT_APP_RAPID_API_HOST=mmo-games.p.rapidapi.com
+
 
 
 <h3 id="autor">Autor</h3>
