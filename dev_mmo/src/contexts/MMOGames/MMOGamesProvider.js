@@ -14,23 +14,23 @@ export const MMOGamesProvider = ({ children }) => {
     const news = useRef([]);
 
     useEffect(() => {
-        (async () => {
+        async function set() {
             var listaNoticias = await api.GetLatestNews();
             setNewsList(listaNoticias);
             setNoticiasFiltradas(listaNoticias);
             news.current = listaNoticias;
             setNoticiasFiltradas(filtrarListaPorPagina(news.current, pagina));
-        })()
+        }
     }, []);
 
     useEffect(() => {
-        (async () => {
+        async function set() {
             var listaJogos = await api.GetGamesList();
             setGamesList(listaJogos);
             setJogosFiltrados(listaJogos);
             games.current = listaJogos;
             setJogosFiltrados(filtrarListaPorPagina(games.current, pagina));
-        })()
+        }
     }, []);
 
     useEffect(() => {

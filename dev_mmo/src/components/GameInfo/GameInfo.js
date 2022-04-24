@@ -19,11 +19,11 @@ export const GameInfo = () => {
         , [])
 
     useEffect(() => {
-        (async () => {
+        async function set() {
             var resultado = await api.GetGameDetails(idGame)
             setGameData(resultado)
             setThumbImage(resultado.screenshots[0].image)
-        })()
+        }
 
     }, []);
 
