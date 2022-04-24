@@ -1,7 +1,7 @@
 <h1 align="center"> Projeto 2 DevInHouse - MMO Games</h1>
 
 <h1 align="center">
-Site demonstração: ainda indisponível - houve falha no deploy. Aguardando avaliação do projeto para incluir deploy
+Vídeo demonstração: https://www.youtube.com/watch?v=zUj2zDuplOI
 </h1>
 
 <p align="center">
