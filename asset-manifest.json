@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/DevInMMO/static/css/main.e771f90e.css",
-    "main.js": "/DevInMMO/static/js/main.bd08ab4e.js",
+    "main.js": "/DevInMMO/static/js/main.830161c7.js",
     "index.html": "/DevInMMO/index.html",
     "main.e771f90e.css.map": "/DevInMMO/static/css/main.e771f90e.css.map",
-    "main.bd08ab4e.js.map": "/DevInMMO/static/js/main.bd08ab4e.js.map"
+    "main.830161c7.js.map": "/DevInMMO/static/js/main.830161c7.js.map"
   },
   "entrypoints": [
     "static/css/main.e771f90e.css",
-    "static/js/main.bd08ab4e.js"
+    "static/js/main.830161c7.js"
   ]
 }
