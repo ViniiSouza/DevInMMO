@@ -21,6 +21,7 @@ export const MMOGamesProvider = ({ children }) => {
             news.current = listaNoticias;
             setNoticiasFiltradas(filtrarListaPorPagina(news.current, pagina));
         }
+        set()
     }, []);
 
     useEffect(() => {
@@ -31,6 +32,7 @@ export const MMOGamesProvider = ({ children }) => {
             games.current = listaJogos;
             setJogosFiltrados(filtrarListaPorPagina(games.current, pagina));
         }
+        set()
     }, []);
 
     useEffect(() => {

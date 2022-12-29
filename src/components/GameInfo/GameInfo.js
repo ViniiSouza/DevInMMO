@@ -14,15 +14,12 @@ export const GameInfo = () => {
 
     const [loading, setLoading] = useState(true)
 
-    useEffect((
-        () => setTimeout(() => { setLoading(false) }, 3000))
-        , [])
-
     useEffect(() => {
         async function set() {
             var resultado = await api.GetGameDetails(idGame)
             setGameData(resultado)
             setThumbImage(resultado.screenshots[0].image)
+            setLoading(false)
         }
 
     }, []);
