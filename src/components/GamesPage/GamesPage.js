@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React  from "react";
 import { useMMOGames } from "../../contexts/MMOGames/useMMOGames";
 import { Games } from "../Games/Games";
 import { Paginacao } from "../Paginacao/Paginacao";
@@ -7,7 +7,7 @@ import { GamesPageContainer } from "./GamesPage.styles";
 
 export const GamesPage = () => {
     const { jogosFiltrados, setTermoBusca, setPagina } = useMMOGames();
-    useEffect(() => {
+    React.useEffect(() => {
         setTermoBusca('')
         setPagina(1)
     }, []);
