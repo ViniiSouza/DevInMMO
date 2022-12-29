@@ -17,7 +17,7 @@ function App() {
           <MyThemesContext.Consumer>
             {(prop) => (
               <ThemeProvider theme={prop.temaAtual}>
-                <BrowserRouter>
+                <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/DevInMMO/' : '/'}>
                   <Header />
                   <Router />
                 </BrowserRouter>
