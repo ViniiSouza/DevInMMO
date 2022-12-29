@@ -6,11 +6,11 @@ import { GameInfo } from '../components/GameInfo/GameInfo';
 
 export const Router = () => (
     <Routes>
-        <Route path="/" element={<Navigate replace to='/#/home' />} />
-        <Route path="/#/home" element={<Home />} />
-        <Route path="/#/noticias" element={<NewsPage />} />
-        <Route path="/#/jogos" element={<GamesPage />} />
+        <Route path="/" element={<Navigate replace to='/home' />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/noticias" element={<NewsPage />} />
+        <Route path="/jogos" element={<GamesPage />} />
         <Route path="*" element={<Navigate replace to='/home' />} />
-        <Route path="/#/game/:idGame" element={<GameInfo />} />
+        <Route path="/game/:idGame" element={<GameInfo />} />
     </Routes>
 )
