@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/devinmmo-deploy/static/css/main.e771f90e.css",
+    "main.js": "/devinmmo-deploy/static/js/main.7fe1d44f.js",
+    "index.html": "/devinmmo-deploy/index.html",
+    "main.e771f90e.css.map": "/devinmmo-deploy/static/css/main.e771f90e.css.map",
+    "main.7fe1d44f.js.map": "/devinmmo-deploy/static/js/main.7fe1d44f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e771f90e.css",
+    "static/js/main.7fe1d44f.js"
+  ]
+}
