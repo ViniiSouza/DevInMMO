@@ -1,4 +1,4 @@
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 import { useMMOGames } from "../../contexts/MMOGames/useMMOGames";
 import { Games } from "../Games/Games";
 import { Paginacao } from "../Paginacao/Paginacao";

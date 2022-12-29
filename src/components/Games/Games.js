@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useMMOGames } from "../../contexts/MMOGames/useMMOGames"
 import { GamesCard } from "../GamesCard/GamesCard";
 import SkeletonElement from "../skeletons/SkeletonElement";
@@ -9,7 +9,7 @@ export const Games = () => {
     const skeletonArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
     const [loading, setLoading] = useState(true)
 
-    React.useEffect((
+    useEffect((
         () => setTimeout(() => { setLoading(false) }, 1000))
         , [])
 
