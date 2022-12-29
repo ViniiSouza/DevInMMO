@@ -21,7 +21,7 @@ export const GameInfo = () => {
             setThumbImage(resultado.screenshots[0].image)
             setLoading(false)
         }
-
+        set()
     }, []);
 
     function changeThumbImage(url) {
