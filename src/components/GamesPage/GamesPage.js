@@ -18,7 +18,7 @@ export const GamesPage = () => {
             <Paginacao typeList={'games'} />
 
             <Games />
-            {jogosFiltrados.length > 10 ?
+            {jogosFiltrados && jogosFiltrados.length > 10 ?
                 <Paginacao typeList={'games'} />
                 :
                 <br/>
